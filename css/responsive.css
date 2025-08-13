@@ -1771,6 +1771,10 @@ margin-bottom: 10px;
     padding: 7px;
     font-size: 13px;
 }
+.outdoor_project_heading select {
+    padding: 7px;
+    font-size: 13px;
+}
 .project_tab_area {
     padding-left: 0;
 }
@@ -1920,9 +1924,9 @@ margin-bottom: 10px;
     padding: 17px 20px;
     height: 12px;
 }
-.testimonial_profile_content {
+/* .testimonial_profile_content {
     padding: 15px;
-}
+} */
 .testimonial_text p {
     margin-bottom: 0;
     font-size: 15px;
