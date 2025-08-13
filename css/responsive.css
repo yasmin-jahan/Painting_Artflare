@@ -1400,7 +1400,7 @@ ul#tabs-nav {
 }
 .common_project_heading {
     flex-wrap: wrap;
-    column-gap: 20px;
+    column-gap: 30px;
     row-gap: 5px;
 }
 .indoor_project_heading select {
@@ -1928,7 +1928,6 @@ margin-bottom: 10px;
     padding: 15px;
 } */
 .testimonial_text p {
-    margin-bottom: 0;
     font-size: 15px;
     line-height: 23px;
 }
