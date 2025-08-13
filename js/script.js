@@ -126,6 +126,10 @@ $(document).ready(function () {
       },
 
       1024: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+       1199: {
         slidesPerView: 3,
         spaceBetween: 20,
       },
@@ -233,3 +237,25 @@ $(document).ready(function () {
         }
     });
 });
+
+// $(document).ready(function () {
+//     // Append dropdown arrow to any li that has a submenu
+//     $('.main_header_nav li:has(.sub-menu-1) > a').each(function () {
+//         $(this).append('<span class="mean-expand"><i class="fa-solid fa-angle-down"></i></span>');
+//     });
+
+//     // Click on arrow to toggle submenu
+//     $('.main_header_nav').on('click', '.mean-expand', function (e) {
+//         e.preventDefault();
+//         e.stopPropagation();
+
+//         let parentLi = $(this).closest('li');
+
+//         if (parentLi.hasClass('active')) {
+//             parentLi.removeClass('active').find('.sub-menu-1').stop(true, true).slideUp(200);
+//         } else {
+//             $('.main_header_nav li').removeClass('active').find('.sub-menu-1').slideUp(200);
+//             parentLi.addClass('active').find('.sub-menu-1').stop(true, true).slideDown(200);
+//         }
+//     });
+// });
