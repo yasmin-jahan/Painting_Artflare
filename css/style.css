@@ -368,9 +368,9 @@ main {
   margin-bottom: 30px;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
+.book_input_form input[type="text"],
+.book_input_form input[type="email"],
+.book_input_form textarea {
   display: block;
   margin-bottom: 5px;
   font-size: 16px;

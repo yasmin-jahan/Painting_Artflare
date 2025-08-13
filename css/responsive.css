@@ -1609,7 +1609,7 @@ font-size: 20px;
 .book_input_form {
     margin-bottom: 15px;
 }
-.newsletter_input_form input[type="text"], input[type="email"], textarea {
+.newsletter_input_form input[type="text"], input[type="email"], .newsletter_input_form textarea {
     font-size: 13px;
 }
 .book_input_form input::placeholder{
@@ -1786,6 +1786,11 @@ margin-bottom: 10px;
 }
 .common_project_hover a i {
     font-size: 12px;
+}
+.book_input_form input[type="text"],
+.book_input_form input[type="email"],
+.book_input_form textarea {
+font-size: 13px;
 }
     /* project-section-ends */
 
