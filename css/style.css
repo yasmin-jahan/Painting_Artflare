@@ -52,7 +52,9 @@ header.sticky .header_contact_info .header_contact i {
   border: 1px solid #3a3a3a;
   color: #3a3a3a;
 }
-
+header.sticky .hamburger i{
+  color: #000;
+}
 .hero-wrapper {
   position: relative;
   background-image: url(../img/wrapper_img.png);
@@ -117,12 +119,13 @@ header {
 
 }
 
-.main_header_nav ul li a:hover {
+.main_header_nav ul li:hover > a {
   color: #ef375d;
 }
 
 .header_contact_info .header_contact {
   text-decoration: none;
+  display: flex;
   align-items: baseline;
   color: #ffffff;
   column-gap: 12px;
@@ -226,8 +229,8 @@ main {
   line-height: 82px;
   color: #2b2a2a;
   font-weight: 300;
-  padding-bottom: 30px;
-  margin-bottom: 60px;
+  /* padding-bottom: 30px; */
+  margin-bottom: 70px;
 }
 
 .hero_content h1::before {
@@ -236,7 +239,7 @@ main {
   width: 112px;
   height: 4px;
   left: -35px;
-  bottom: -10%;
+  bottom: -25%;
   background: #ef375d;
 }
 
@@ -308,7 +311,7 @@ main {
 
   border-radius: 5px;
   background-color: #ffffff;
-  z-index: 99;
+  /* z-index: 99; */
   border: 1px solid #cfcfcf;
 }
 
@@ -442,7 +445,7 @@ textarea {
   line-height: 40px;
   color: #2a2a2a;
   font-weight: 400;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
   margin-bottom: 30px;
   font-family: "Geomanist";
 }
@@ -453,7 +456,7 @@ textarea {
   width: 112px;
   height: 4px;
   left: -25px;
-  bottom: -25%;
+  bottom: -45%;
   background: #ef375d;
 }
 
@@ -1003,9 +1006,9 @@ ul#tabs-nav li:hover::before {
 .common_project_hover h3 {
   font-size: 24px;
   letter-spacing: 0px;
-  line-height: 40px;
   color: #fffefe;
   font-weight: 400;
+  margin-bottom: 0;
 }
 
 .common_project_hover a {
@@ -1808,7 +1811,12 @@ textarea {
   background: transparent;
   outline: none;
 }
-
+.newsletter_input_form input::placeholder {
+  color: #a6a8d2;
+}
+#messageLabel {
+    padding: 5px;
+}
 .newsletter_input_form label {
   color: #a6a8d2;
 }
