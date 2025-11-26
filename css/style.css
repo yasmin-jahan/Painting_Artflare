@@ -169,7 +169,7 @@ header {
   display: block;
   position: absolute;
   background: linear-gradient(139deg, #f91d8f 0%, #175dad 100%);
-  margin-top: 5px;
+  /* margin-top: 5px; */
   max-width: 280px;
   box-shadow: 8px 3px 10px rgba(11, 11, 11, 0.1);
 }
