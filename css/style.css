@@ -52,9 +52,11 @@ header.sticky .header_contact_info .header_contact i {
   border: 1px solid #3a3a3a;
   color: #3a3a3a;
 }
-header.sticky .hamburger i{
+
+header.sticky .hamburger i {
   color: #000;
 }
+
 .hero-wrapper {
   position: relative;
   background-image: url(../img/wrapper_img.png);
@@ -105,7 +107,7 @@ header {
 
 .main_header_nav ul li {
   list-style: none;
-  padding:2px 10px;
+  padding: 2px 10px;
 }
 
 .main_header_nav ul li a {
@@ -119,7 +121,7 @@ header {
 
 }
 
-.main_header_nav ul li:hover > a {
+.main_header_nav ul li:hover>a {
   color: #ef375d;
 }
 
@@ -153,17 +155,16 @@ header {
   color: #000;
 }
 
-/* .sub-menu-1 {
-  display: none;
-} */
+
 .main_header_nav .sub-menu-1 {
-    display: none;
+  display: none;
 }
 
-/* If using .active class, jQuery will also trigger this state */
-.main_header_nav li.active > .sub-menu-1 {
-    display: block;
+
+.main_header_nav li.active>.sub-menu-1 {
+  display: block;
 }
+
 .main_header_nav ul li:hover .sub-menu-1 {
   display: block;
   position: absolute;
@@ -171,7 +172,6 @@ header {
   margin-top: 5px;
   max-width: 280px;
   box-shadow: 8px 3px 10px rgba(11, 11, 11, 0.1);
-  /* margin-left: -15px; */
 }
 
 .main_header_nav ul li:hover .sub-menu-1 ul {
@@ -186,7 +186,7 @@ header {
   background: transparent;
   border-radius: 0;
   text-align: left;
-text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .main_header_nav ul li:hover .sub-menu-1 ul li a {
@@ -200,6 +200,12 @@ text-transform: uppercase;
 
 .main_header_nav ul li:hover .sub-menu-1 ul li a:hover {
   color: #000;
+}
+.mean-expand i{
+    transition: all .6s ease;
+}
+.main_header_nav ul li:hover .mean-expand i{
+  transform: rotate(180deg);
 }
 
 /* header-section-ends */
@@ -273,27 +279,32 @@ main {
 .book_button button:hover {
   background-image: linear-gradient(139deg, #f91d63 0%, #104785 100%);
 }
+
 .mobile_nav_header {
-    display: none;
+  display: none;
 }
+
 .top_header_btn {
-    display: none;
+  display: none;
 }
+
 .black_overlay {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #0000008e;
-    z-index: 100;
-    display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #0000008e;
+  z-index: 100;
+  display: none;
 }
- .main_header_nav ul li.active > a .mean-expand i {
+
+.main_header_nav ul li.active>a .mean-expand i {
   transform: rotate(180deg);
 }
+
 /* hero-section-ends */
 
 
@@ -308,7 +319,7 @@ main {
   position: relative;
   padding-bottom: 0;
   margin-top: -150px;
-
+  z-index: 99;
   border-radius: 5px;
   background-color: #ffffff;
   /* z-index: 99; */
@@ -676,11 +687,18 @@ main {
 
 .service_image_content a {
   text-decoration: none;
+  z-index: 5;
+}
+
+.service_content_box:hover .service_image_content a i {
+  transform: translateX(0);
 }
 
 .service_image_content a i {
   color: #ffffff;
   font-size: 20px;
+  transform: translateX(-20px);
+  transition: all .6s ease;
 }
 
 .service_content_box {
@@ -714,7 +732,8 @@ main {
   cursor: pointer;
   visibility: hidden;
   text-align: left;
-  transition: all .3s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
 }
 
 .service_content_box:hover .service_content {
@@ -734,6 +753,19 @@ main {
   padding-right: 50px;
   line-height: 28px;
   color: #fffefe;
+}
+
+.service_content h3,
+.service_content p {
+  transform: translateX(-20px);
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+.service_content_box:hover .service_content h3,
+.service_content_box:hover .service_content p {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 /* service-section-ends */
@@ -1016,6 +1048,18 @@ ul#tabs-nav li:hover::before {
   transition: all .3s ease;
 }
 
+.common_project_hover h3,
+.common_project_hover a {
+  transform: translateX(-20px);
+  transition: all .6s ease-in-out;
+}
+
+.common_project_text:hover .common_project_hover h3,
+.common_project_text:hover .common_project_hover a {
+  transform: translateX(0);
+}
+
+
 .common_project_hover a:hover {
   color: #000;
 }
@@ -1102,7 +1146,7 @@ ul#tabs-nav li:hover::before {
 
 .contract_row {
 
-display: flex;
+  display: flex;
 
 }
 
@@ -1811,12 +1855,15 @@ textarea {
   background: transparent;
   outline: none;
 }
+
 .newsletter_input_form input::placeholder {
   color: #a6a8d2;
 }
+
 #messageLabel {
-    padding: 5px;
+  padding: 5px;
 }
+
 .newsletter_input_form label {
   color: #a6a8d2;
 }
@@ -2124,9 +2171,11 @@ textarea {
   cursor: pointer;
   transition: all .3s ease;
 }
-.scroll_top .button:hover{
+
+.scroll_top .button:hover {
   color: #000;
 }
+
 .scroll_top .button.show {
   opacity: 1;
   visibility: visible;
