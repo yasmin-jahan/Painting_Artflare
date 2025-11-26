@@ -248,6 +248,9 @@ display: none!important;
 header {
     padding: 18px 0;
 }
+.main_header_nav ul li:hover .mean-expand i{
+  transform:none;
+}
   /* header-section-ends */
 
   /* hero-section-starts */
